@@ -177,11 +177,11 @@ body {
 }
 
 .logo-simplitrain {
-  height: 35px;
+  height: 48px;
 }
 
 .logo-logicaloperations {
-  height: 28px;
+  height: 38px;
 }
 
 .brand-separator {
@@ -1051,11 +1051,11 @@ body {
   }
 
   .header-logo-img {
-    height: 22px;
+    height: 28px;
   }
 
   .logo-simplitrain {
-    height: 30px;
+    height: 38px;
   }
 
   .brand-separator {
@@ -1393,7 +1393,7 @@ body {
 }
 
 .partner-logo-container {
-  height: 64px;
+  height: 85px;
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
