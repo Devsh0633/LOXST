@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 8. 3D Card Hover Tilt Effect (Micro-interactions)
   if (!prefersReducedMotion) {
-    const tiltElements = document.querySelectorAll('.feature-card, .diagram-node');
+    const tiltElements = document.querySelectorAll('.feature-card, .diagram-node, .partner-card');
     tiltElements.forEach(card => {
       card.addEventListener('mousemove', e => {
         const rect = card.getBoundingClientRect();
