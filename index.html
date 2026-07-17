@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimpliTrain + Logical Operations | Training, Built In</title>
+  <meta name="description" content="Buy Logical Operations courseware and get SimpliTrain's TMS and LMS included. One purchase, one setup — training delivery is already built in.">
+  
+  <!-- Inter Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="dark-theme">
+  
+  <!-- Global SVG Gradients Definition -->
+  <svg style="width:0; height:0; position:absolute;" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="grad-orange-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ff6b6b" />
+        <stop offset="35%" stop-color="#ff8e53" />
+        <stop offset="75%" stop-color="#d451e6" />
+        <stop offset="100%" stop-color="#8b5cf6" />
+      </linearGradient>
+      <linearGradient id="grad-green-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10b981" />
+        <stop offset="50%" stop-color="#06b6d4" />
+        <stop offset="100%" stop-color="#3b82f6" />
+      </linearGradient>
+      <linearGradient id="grad-purple-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#a78bfa" />
+        <stop offset="100%" stop-color="#ec4899" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- Grid Backdrop inspired by gsap.com -->
+  <div class="technical-grid-background">
+    <div class="horizontal-lines">
+      <div class="grid-line"></div>
+      <div class="grid-line"></div>
+      <div class="grid-line"></div>
+    </div>
+    <div class="vertical-lines">
+      <div class="grid-line"></div>
+      <div class="grid-line"></div>
+    </div>
+    
+    <!-- Floating decorative elements inspired by GSAP site -->
+    <!-- Flower shape (Orange/Purple gradient) -->
+    <svg class="floating-decorative-element el-flower" viewBox="0 0 100 100">
+      <path d="M 50 15 C 30 15 30 50 50 50 C 70 50 70 15 50 15 Z" fill="url(#grad-orange-purple)"></path>
+      <path d="M 50 85 C 30 85 30 50 50 50 C 70 50 70 85 50 85 Z" fill="url(#grad-orange-purple)"></path>
+      <path d="M 15 50 C 15 30 50 30 50 50 C 50 70 15 70 15 50 Z" fill="url(#grad-orange-purple)"></path>
+      <path d="M 85 50 C 85 30 50 30 50 50 C 50 70 85 70 85 50 Z" fill="url(#grad-orange-purple)"></path>
+    </svg>
+    
+    <!-- Torus/Ring shape (Green/Blue gradient) -->
+    <svg class="floating-decorative-element el-torus" viewBox="0 0 100 100" fill="none" stroke="url(#grad-green-blue)" stroke-width="8">
+      <circle cx="50" cy="50" r="30"></circle>
+    </svg>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-logotype-logos">
+        <img src="assets/logo-simplitrain.png" alt="SimpliTrain Logo" class="header-logo-img logo-simplitrain">
+        <span class="brand-separator">/</span>
+        <img src="assets/logo-logicaloperations.png" alt="Logical Operations Logo" class="header-logo-img logo-logicaloperations">
+      </div>
+      <div class="header-badge">Co-Marketing Spec</div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="section hero-section" id="hero">
+    <div class="container hero-container">
+      <span class="eyebrow">Plug and Play by SimpliTrain</span>
+      <h1 class="hero-headline" id="main-headline">One purchase. Full delivery, built in.</h1>
+      <p class="hero-subhead">Buy the <span class="text-highlight-orange">course</span>. Get the <span class="text-highlight-green">platform</span>. Start training.</p>
+      <p class="hero-support">
+        Logical Operations courseware, with SimpliTrain's Training Management System (TMS) and Learning Management System (LMS) included.
+      </p>
+
+      <!-- Hero 3-Node Connected Diagram (Sleek Technical Wireframe) -->
+      <div class="hero-diagram-container">
+        <div class="hero-diagram">
+          <!-- Connection SVG -->
+          <svg class="diagram-svg-line" viewBox="0 0 800 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="hero-flow-path" d="M 120 50 L 680 50" stroke="#242936" stroke-width="2" />
+            <path id="hero-flow-active" d="M 120 50 L 680 50" stroke="url(#grad-orange-purple)" stroke-width="2.5" stroke-dasharray="10 200" />
+          </svg>
+
+          <!-- Nodes -->
+          <div class="diagram-node" id="node-hero-buy">
+            <span class="node-meta-tag">[01/BUY]</span>
+            <span class="node-status-dot"></span>
+            <div class="node-icon-container">
+              <div class="node-sonar-container">
+                <div class="sonar-wave"></div>
+                <div class="sonar-wave wave-2"></div>
+              </div>
+              <svg class="node-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+            </div>
+            <div class="node-label">Buy the Course</div>
+          </div>
+          
+          <div class="diagram-node" id="node-hero-get">
+            <span class="node-meta-tag">[02/DEPLOY]</span>
+            <span class="node-status-dot"></span>
+            <div class="node-icon-container">
+              <div class="node-sonar-container">
+                <div class="sonar-wave"></div>
+                <div class="sonar-wave wave-2"></div>
+              </div>
+              <svg class="node-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6" y2="6.01"></line>
+                <line x1="6" y1="18" x2="6" y2="18.01"></line>
+              </svg>
+            </div>
+            <div class="node-label">Get the Platform</div>
+          </div>
+          
+          <div class="diagram-node" id="node-hero-start">
+            <span class="node-meta-tag">[03/LIVE]</span>
+            <span class="node-status-dot"></span>
+            <div class="node-icon-container">
+              <div class="node-sonar-container">
+                <div class="sonar-wave"></div>
+                <div class="sonar-wave wave-2"></div>
+              </div>
+              <svg class="node-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 3h20v14H2z"></path>
+                <path d="M8 21h8"></path>
+                <path d="M12 17v4"></path>
+                <path d="m10 8 5 3-5 3z"></path>
+              </svg>
+            </div>
+            <div class="node-label">Start Training</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Shift Section (Before vs Now Comparison Dashboard style) -->
+  <section class="section shift-section" id="the-shift">
+    <div class="container">
+      <span class="eyebrow" string="progress">Why this changes things</span>
+      
+      <div class="shift-comparison-grid">
+        <!-- Before Card (Muted, complex, obsolete) -->
+        <div class="shift-panel panel-before" string="progress" string-delay="0.05">
+          <div class="panel-header">
+            <span class="panel-badge-red">Legacy Process</span>
+          </div>
+          <div class="panel-body">
+            <div class="flow-step">
+              <span class="step-lbl">01</span>
+              <span class="step-txt">Buy courseware</span>
+            </div>
+            <div class="flow-divider"></div>
+            <div class="flow-step step-obsolete">
+              <span class="step-lbl">02</span>
+              <span class="step-txt">Set up separate TMS/LMS</span>
+            </div>
+            <div class="flow-divider"></div>
+            <div class="flow-step">
+              <span class="step-lbl">03</span>
+              <span class="step-txt">Deliver training</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Now Card (Integrated, fast, modern) -->
+        <div class="shift-panel panel-now" string="progress" string-delay="0.15">
+          <div class="panel-header">
+            <span class="panel-badge-blue">Integrated Operation</span>
+          </div>
+          <div class="panel-body">
+            <div class="flow-step">
+              <span class="step-lbl">01</span>
+              <span class="step-txt">Buy courseware</span>
+            </div>
+            <div class="flow-divider divider-active"></div>
+            <div class="flow-step step-highlighted">
+              <span class="step-lbl text-blue">02</span>
+              <span class="step-txt font-semibold"><span class="text-highlight-green">SimpliTrain</span> is already built in</span>
+            </div>
+            <div class="flow-divider divider-active"></div>
+            <div class="flow-step">
+              <span class="step-lbl">03</span>
+              <span class="step-txt">Deliver training</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section how-it-works-section" id="how-it-works">
+    <div class="container">
+      <h2 class="section-title text-center" string="split" string-split-type="words">
+        How it works
+        <svg class="el-asterisk" viewBox="0 0 24 24" fill="none" stroke="url(#grad-orange-purple)" stroke-width="2.5">
+          <line x1="12" y1="2" x2="12" y2="22"></line>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+          <line x1="4.93" y1="19.07" x2="19.07" y2="4.93"></line>
+        </svg>
+      </h2>
+
+      <!-- Tab Controller Segmented Toggle -->
+      <div class="toggle-wrapper" string="progress">
+        <div class="segmented-control">
+          <button class="segment-btn active" id="btn-path-existing" data-mode="existing">
+            Already delivering training
+          </button>
+          <button class="segment-btn" id="btn-path-new" data-mode="new">
+            New to training
+          </button>
+          <div class="segment-active-bg"></div>
+        </div>
+      </div>
+
+      <!-- Technical Diagram -->
+      <div class="how-diagram-panel" string="progress" string-delay="0.1">
+        <div class="diagram-grid">
+          <!-- Connection Path SVG -->
+          <svg class="grid-path-svg" viewBox="0 0 900 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="how-path-line" d="M 120 60 L 780 60" stroke="#242936" stroke-width="2" />
+            <path id="how-path-active" d="M 120 60 L 780 60" stroke="url(#grad-green-blue)" stroke-width="2.5" stroke-dasharray="12 180" />
+          </svg>
+
+          <!-- Step 1 -->
+          <div class="grid-node" id="how-node-1">
+            <div class="node-index">Step 01</div>
+            <h4 class="node-title">Buy the Course</h4>
+            <p class="node-desc">Select Logical Operations courseware options.</p>
+          </div>
+
+          <!-- Step 2 (Dynamic Switcher) -->
+          <div class="grid-node path-container" id="how-node-2">
+            <div class="node-index">Step 02</div>
+            <div class="dynamic-path-item path-existing active">
+              <h4 class="node-title text-blue">Connect & Migrate</h4>
+              <p class="node-desc">Transition current operations effortlessly with support.</p>
+            </div>
+            <div class="dynamic-path-item path-new">
+              <h4 class="node-title text-blue">Platform Ready</h4>
+              <p class="node-desc">Immediate setup without purchasing additional systems.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="grid-node" id="how-node-3">
+            <div class="node-index">Step 03</div>
+            <h4 class="node-title">Start Training</h4>
+            <p class="node-desc">Launch classroom, virtual, or hybrid sessions instantly.</p>
+          </div>
+        </div>
+
+        <!-- Single Converged Node -->
+        <div class="diagram-footer-note" string="progress" string-delay="0.15">
+          <div class="footer-note-content">
+            <span class="note-blue-dot"></span>
+            Training delivered. No separate system needed.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included Section -->
+  <section class="section what-is-included-section" id="what-is-included">
+    <div class="container">
+      <h2 class="section-title text-center" string="split" string-split-type="words">
+        What's included, out of the box
+        <svg class="el-asterisk" viewBox="0 0 24 24" fill="none" stroke="url(#grad-green-blue)" stroke-width="2.5">
+          <line x1="12" y1="2" x2="12" y2="22"></line>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+          <line x1="4.93" y1="19.07" x2="19.07" y2="4.93"></line>
+        </svg>
+      </h2>
+
+      <div class="included-features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card" string="progress">
+          <div class="feature-header">
+            <div class="feature-icon">
+              <!-- Calendar outline icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Training Management (TMS)</h3>
+          </div>
+          <p class="feature-desc">Coordinate logistics, schedule live courses, allocate instructors, and manage compliance tracking inside a centralized TMS interface designed for scaling operations.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card" string="progress" string-delay="0.05">
+          <div class="feature-header">
+            <div class="feature-icon">
+              <!-- Monitor outline icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Learning Management (LMS)</h3>
+          </div>
+          <p class="feature-desc">Support learners through multiple paths: self-paced digital courseware, live virtual classrooms, or hybrid classroom sessions. Manage and distribute content instantly.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card" string="progress" string-delay="0.1">
+          <div class="feature-header">
+            <div class="feature-icon">
+              <!-- Globe/Portal outline icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Branded Learner Portal</h3>
+          </div>
+          <p class="feature-desc">Provide learners with a localized, custom-branded experience. Deliver course catalogs, student registrations, and portal dashboards hosted directly on your private domain.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card" string="progress" string-delay="0.15">
+          <div class="feature-header">
+            <div class="feature-icon">
+              <!-- Award/Badge outline icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-title">Progress & Certification</h3>
+          </div>
+          <p class="feature-desc">Verify and generate digital course certifications automatically on completion. Access performance graphs, export auditor-ready compliance data, and track student milestones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why This Pairing Works -->
+  <section class="section pairing-section" id="pairing-section">
+    <div class="container container-narrow">
+      <div class="pairing-header" string="progress">
+        <span class="eyebrow">Built on two strengths</span>
+      </div>
+      <p class="pairing-prose-text" id="pairing-paragraph">
+        Logical Operations has spent over <span class="text-highlight-orange">40 years</span> building instructor-led courseware trusted by training providers worldwide. SimpliTrain provides the <span class="text-highlight-green">infrastructure</span> to run that training (scheduling, delivery, tracking) without stitching together separate systems. One purchase now covers <span class="text-highlight-purple">both halves</span> of running a training program.
+      </p>
+    </div>
+  </section>
+
+  <!-- Showcase Section -->
+  <section class="section showcase-section" id="showcase">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="showcase-header" string="progress">
+          <span class="eyebrow">Platform Showcase</span>
+        </div>
+        <h2 class="section-title text-left" string="split" string-split-type="words">
+          How it looks in action
+          <svg class="el-asterisk" viewBox="0 0 24 24" fill="none" stroke="url(#grad-orange-purple)" stroke-width="2.5">
+            <line x1="12" y1="2" x2="12" y2="22"></line>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+            <line x1="4.93" y1="19.07" x2="19.07" y2="4.93"></line>
+          </svg>
+        </h2>
+      </div>
+      
+      <!-- Showcase Slider Wrapper (6 Slides) -->
+      <div class="showcase-slider-container" string="progress">
+        <div class="showcase-track-container">
+          <div class="showcase-track">
+            <!-- Slide 1 -->
+            <div class="showcase-slide" data-title="Course Catalog Portal" data-tags="Courseware, Catalog, Search">
+              <img src="assets/catalog.png" alt="Sleek catalog portal display showing Logical Operations courseware inside SimpliTrain" class="showcase-img">
+            </div>
+            <!-- Slide 2 -->
+            <div class="showcase-slide" data-title="Interactive Live Classroom" data-tags="LMS, Video, Slides, Discussion">
+              <img src="assets/classroom.png" alt="Interactive virtual live classroom with active discussion panels" class="showcase-img">
+            </div>
+            <!-- Slide 3 -->
+            <div class="showcase-slide active" data-title="Student Analytics & Completions" data-tags="TMS, Analytics, Progress, Chart">
+              <img src="assets/analytics.png" alt="TMS student registration reports and certification dashboard" class="showcase-img">
+            </div>
+            <!-- Slide 4 -->
+            <div class="showcase-slide" data-title="Hands-On Lab Environment" data-tags="LMS, Sandbox, Code, Terminal">
+              <img src="assets/player.png" alt="Sleek dark hands-on sandbox code lab and interactive terminal" class="showcase-img">
+            </div>
+            <!-- Slide 5 -->
+            <div class="showcase-slide" data-title="Learner Progress & Verification" data-tags="LMS, Timeline, Verification, Badge">
+              <img src="assets/progress.png" alt="Linear progress map and verifiable digital badges" class="showcase-img">
+            </div>
+            <!-- Slide 6 -->
+            <div class="showcase-slide" data-title="Instructor Allocation Calendar" data-tags="TMS, Calendar, Schedule, Booking">
+              <img src="assets/calendar.png" alt="Instructor scheduling and room booking availability matrix" class="showcase-img">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="showcase-details-row">
+          <!-- Details Left -->
+          <div class="showcase-details">
+            <h3 class="showcase-item-title" id="showcase-item-title">Student Analytics & Completions</h3>
+            <span class="showcase-item-tags" id="showcase-item-tags">{ TMS, Analytics, Progress, Chart }</span>
+          </div>
+          
+          <!-- Bottom Action and Navigation -->
+          <div class="showcase-action-nav-row">
+            <a href="https://simplitrain.com/courses" class="explore-showcase-btn" id="btn-explore-courses">Explore All Courses</a>
+            
+            <div class="showcase-nav">
+              <button class="nav-arrow-btn" id="btn-showcase-prev" aria-label="Previous Showcase">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="19" y1="12" x2="5" y2="12"></line>
+                  <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+              </button>
+              <button class="nav-arrow-btn" id="btn-showcase-next" aria-label="Next Showcase">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section (Technical Accordion) -->
+  <section class="section faq-section" id="faq">
+    <div class="container container-narrow">
+      <h2 class="section-title text-center" string="split" string-split-type="words">
+        Common questions
+        <svg class="el-asterisk" viewBox="0 0 24 24" fill="none" stroke="url(#grad-green-blue)" stroke-width="2.5">
+          <line x1="12" y1="2" x2="12" y2="22"></line>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+          <line x1="4.93" y1="19.07" x2="19.07" y2="4.93"></line>
+        </svg>
+      </h2>
+      
+      <div class="technical-accordion">
+        
+        <!-- Q1 -->
+        <div class="accordion-item" string="progress">
+          <button class="accordion-trigger" id="faq-q-1" aria-expanded="false">
+            <span class="trigger-text">What am I actually buying?</span>
+            <span class="trigger-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-svg">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="accordion-content" id="faq-a-1">
+            <div class="content-inner">
+              <p>You're buying Logical Operations courseware. When you choose the SimpliTrain option, SimpliTrain's training and learning management platform is included, so you can deliver the course without buying a separate system.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="accordion-item" string="progress" string-delay="0.05">
+          <button class="accordion-trigger" id="faq-q-2" aria-expanded="false">
+            <span class="trigger-text">Do I need to already have an LMS or TMS to use this?</span>
+            <span class="trigger-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-svg">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="accordion-content" id="faq-a-2">
+            <div class="content-inner">
+              <p>No. If you don't have one, SimpliTrain is included and ready to use from the start.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="accordion-item" string="progress" string-delay="0.1">
+          <button class="accordion-trigger" id="faq-q-3" aria-expanded="false">
+            <span class="trigger-text">I already use a different LMS or TMS. Can I still use this?</span>
+            <span class="trigger-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-svg">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="accordion-content" id="faq-a-3">
+            <div class="content-inner">
+              <p>Yes. You can move the training over to SimpliTrain, or run it alongside what you already have. Our team can help you figure out what makes sense for your setup.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="accordion-item" string="progress" string-delay="0.15">
+          <button class="accordion-trigger" id="faq-q-4" aria-expanded="false">
+            <span class="trigger-text">What does "plug and play" actually mean here?</span>
+            <span class="trigger-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-svg">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="accordion-content" id="faq-a-4">
+            <div class="content-inner">
+              <p>It means the platform is already set up and ready to go: no separate purchase, no lengthy implementation. Scheduling, content delivery, learner tracking, and certification are ready to use as soon as your course is live.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="accordion-item" string="progress" string-delay="0.2">
+          <button class="accordion-trigger" id="faq-q-5" aria-expanded="false">
+            <span class="trigger-text">Is this only for new customers?</span>
+            <span class="trigger-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-svg">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="accordion-content" id="faq-a-5">
+            <div class="content-inner">
+              <p>No. It works the same way whether you're setting up training for the first time or already running programs elsewhere. The course itself doesn't change. This is about how it gets delivered.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="accordion-item" string="progress" string-delay="0.25">
+          <button class="accordion-trigger" id="faq-q-6" aria-expanded="false">
+            <span class="trigger-text">Does this cost extra?</span>
+            <span class="trigger-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-svg">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="accordion-content" id="faq-a-6">
+            <div class="content-inner">
+              <p>There are costs associated with the SimpliTrain platform beyond the course price itself. Reach out via Learn More below and our team will walk you through what applies to your situation.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="accordion-item" string="progress" string-delay="0.3">
+          <button class="accordion-trigger" id="faq-q-7" aria-expanded="false">
+            <span class="trigger-text">Which Logical Operations courses are eligible for this?</span>
+            <span class="trigger-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-svg">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="accordion-content" id="faq-a-7">
+            <div class="content-inner">
+              <p>All titles in the Logical Operations courseware catalog are eligible for this bundle.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="accordion-item" string="progress" string-delay="0.35">
+          <button class="accordion-trigger" id="faq-q-8" aria-expanded="false">
+            <span class="trigger-text">Who do I contact for support once I'm set up, Logical Operations or SimpliTrain?</span>
+            <span class="trigger-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-svg">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="accordion-content" id="faq-a-8">
+            <div class="content-inner">
+              <p>Both systems are active. Logical Operations manages the courseware contents, while SimpliTrain provides platform and delivery support. Our processes are synchronized to route requests to the correct desks automatically.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="accordion-item" string="progress" string-delay="0.4">
+          <button class="accordion-trigger" id="faq-q-9" aria-expanded="false">
+            <span class="trigger-text">How long does it take to get up and running?</span>
+            <span class="trigger-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-svg">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="accordion-content" id="faq-a-9">
+            <div class="content-inner">
+              <p>Typically 2 weeks. SimpliTrain's onboarding engineering team takes care of setting up your domain, portals, and migrating your current setup.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing Section -->
+  <section class="section closing-section" id="closing">
+    <div class="container text-center">
+      <h2 class="closing-headline" string="progress">One purchase. Full delivery, built in.</h2>
+      
+      <div class="cta-btn-wrapper" string="progress" string-delay="0.1">
+        <a href="https://simplitrain.com/learn-more" class="learn-more-button" id="btn-learn-more">
+          Learn More
+          <svg class="btn-arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Libraries Loader -->
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  
+  <!-- StringTune -->
+  <script src="https://unpkg.com/@fiddle-digital/string-tune@1.2.0/dist/index.js"></script>
+
+  <!-- Anime.js & Motion.dev global bundles -->
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/motion@11.11.17/dist/motion.js"></script>
+
+  <!-- Main JavaScript File -->
+  <script src="index.js"></script>
+</body>
+</html>
